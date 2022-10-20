@@ -17,10 +17,7 @@ my_favorite_songs = {
     'In This World': 4.02,
 }
 
-len = len(my_favorite_songs)
-random1 = r.choice(list(my_favorite_songs.keys()))
-random2 = r.choice(list(my_favorite_songs.keys()))
-random3 = r.choice(list(my_favorite_songs.keys()))
-duration_of_three = my_favorite_songs[random1] + my_favorite_songs[random2] + my_favorite_songs[random3]
-
-print('Три песни звучат {:.2f} минут'.format(duration_of_three))
+print('Три случайные песни:', r.choices(list(my_favorite_songs.keys()), k = 3))
+print('Три уникальные песни:', r.sample(list(my_favorite_songs.keys()), k = 3))
+print('Три случайные песни звучат {:.2f} минут'.format(sum(r.choices(list(my_favorite_songs.values()), k =3))))
+print('Три уникальные песни звучат {:.2f} минут'.format(sum(r.sample(list(my_favorite_songs.values()), k =3))))
