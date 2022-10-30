@@ -21,3 +21,5 @@ print('Три случайные песни:', r.choices(list(my_favorite_songs.
 print('Три уникальные песни:', r.sample(list(my_favorite_songs.keys()), k = 3))
 print('Три случайные песни звучат {:.2f} минут'.format(sum(r.choices(list(my_favorite_songs.values()), k =3))))
 print('Три уникальные песни звучат {:.2f} минут'.format(sum(r.sample(list(my_favorite_songs.values()), k =3))))
+
+# Отлично
