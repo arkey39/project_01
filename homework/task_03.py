@@ -22,3 +22,5 @@ if month in months:
     print('Количество дней в месяце -', months[month])
 else:
     print('Ошибка в вводе')
+
+# Отлично
