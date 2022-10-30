@@ -16,3 +16,5 @@ index = my_favorite_songs[:14] + ', ' + my_favorite_songs[64:] + ', ' + my_favor
 song_list = my_favorite_songs.split(', ')
 
 print(song_list[0], song_list[4], song_list[1], song_list[3])
+
+# Отлично
