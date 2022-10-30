@@ -17,3 +17,19 @@ print(f'Население {cities_with_pop[1][0]} - {cities_with_pop[1][1]} ч�
 # Итого размер населения - ХХ человек
 
 print(f'Итого размер населения - {cities_with_pop[0][1] + cities_with_pop[1][1] + cities_with_pop[2][1] + cities_with_pop[3][1]}')
+
+# Отлично
+# Можно и так
+# Решение 1 через функцию с циклом for 
+def total_sum(lst):
+    num_lst = []
+    
+    for i in lst:
+        population = i[1]
+        num_lst.append(population)
+    
+    sum_lst = sum(num_lst)
+    
+    return sum_lst
+
+print('Итого размер населения -', total_sum(cities_with_pop), 'человек') 
