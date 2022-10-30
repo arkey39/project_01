@@ -43,3 +43,5 @@ for title, code in titles.items():
         quantity += dict['quantity']
         price += dict['price']
     print(f'"{title}" - {quantity} шт, стоимость {price} руб')
+    
+# Отлично
