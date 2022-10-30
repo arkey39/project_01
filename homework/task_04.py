@@ -27,3 +27,12 @@ random3 = r.randrange(0, len)
 duration_of_three = my_favorite_songs[random1][1] + my_favorite_songs[random2][1] + my_favorite_songs[random3][1]
 
 print('Три песни звучат {:.2f} минут'.format(duration_of_three))
+
+# Отлично можно ещё так
+# Решение 2
+time = 0
+for song in sample(my_favorite_songs, 3):
+    print(song[0])
+    time += song[1]
+
+print(f'Три песни звучат {round(time, 2)}')
