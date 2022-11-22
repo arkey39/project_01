@@ -1,48 +1,48 @@
 import sqlite3
 
-connection = sqlite3.connect('homework_17.11.22.db')
-cursor = connection.cursor()
-query = ("""  CREATE TABLE School 
-              ( School_Id INTEGER NOT NULL PRIMARY KEY,
-                School_Name TEXT NOT NULL,
-                Place_Count INTEGER NOT NULL
-              ); """)
-cursor.execute(query)
-connection.commit()
-connection.close()
+# connection = sqlite3.connect('homework_17.11.22.db')
+# cursor = connection.cursor()
+# query = ("""  CREATE TABLE School 
+#               ( School_Id INTEGER NOT NULL PRIMARY KEY,
+#                 School_Name TEXT NOT NULL,
+#                 Place_Count INTEGER NOT NULL
+#               ); """)
+# cursor.execute(query)
+# connection.commit()
+# connection.close()
 
-connection = sqlite3.connect('homework_17.11.22.db')
-cursor = connection.cursor()
-query = ("""  INSERT INTO School (School_Id , School_Name , Place_Count)
-              VALUES  ('1', 'Протон', 200),
-                      ('2', 'Преспектива', 300),
-                      ('3', 'Спектр', 400),
-                      ('4', 'Содружество', 500); """)
-cursor.execute(query)
-connection.commit()
-connection.close()
+# connection = sqlite3.connect('homework_17.11.22.db')
+# cursor = connection.cursor()
+# query = ("""  INSERT INTO School (School_Id , School_Name , Place_Count)
+#               VALUES  ('1', 'Протон', 200),
+#                       ('2', 'Преспектива', 300),
+#                       ('3', 'Спектр', 400),
+#                       ('4', 'Содружество', 500); """)
+# cursor.execute(query)
+# connection.commit()
+# connection.close()
 
-connection = sqlite3.connect('homework_17.11.22.db')
-cursor = connection.cursor()
-query = """ CREATE TABLE Students
-             (Student_id INTEGER NOT NULL,
-              Student_Name TEXT NOT NULL,
-              School_id INTEGER NOT NULL
-             ); """
-cursor.execute(query)
-connection.commit()
-connection.close()
+# connection = sqlite3.connect('homework_17.11.22.db')
+# cursor = connection.cursor()
+# query = """ CREATE TABLE Students
+#              (Student_id INTEGER NOT NULL,
+#               Student_Name TEXT NOT NULL,
+#               School_id INTEGER NOT NULL
+#              ); """
+# cursor.execute(query)
+# connection.commit()
+# connection.close()
 
-connection = sqlite3.connect('homework_17.11.22.db')
-cursor = connection.cursor()
-query = """ INSERT INTO Students (Student_id, Student_Name, School_id)
-             VALUES  (201, 'Иван', 1),
-                     (202, 'Петр', 2),
-                     (203, 'Анастасия', 3),
-                     (204, 'Игорь', 4); """
-cursor.execute(query)
-connection.commit()
-connection.close()
+# connection = sqlite3.connect('homework_17.11.22.db')
+# cursor = connection.cursor()
+# query = """ INSERT INTO Students (Student_id, Student_Name, School_id)
+#              VALUES  (201, 'Иван', 1),
+#                      (202, 'Петр', 2),
+#                      (203, 'Анастасия', 3),
+#                      (204, 'Игорь', 4); """
+# cursor.execute(query)
+# connection.commit()
+# connection.close()
 
 def get_connection():
   connection = sqlite3.connect('homework_17.11.22.db')
@@ -75,4 +75,4 @@ def get_student_detail(Student_id):
     print ("Ошибка в получении данных по студенту ", error)
 
 
-get_student_detail(201)
+get_student_detail(202)
